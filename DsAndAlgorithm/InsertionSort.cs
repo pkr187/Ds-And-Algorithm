@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DsAndAlgorithm
 {
-    internal class InsertionSort
+    public class InsertionSort
     {
         public void Insertion()
         {
@@ -37,5 +37,3 @@ namespace DsAndAlgorithm
         }
     }
 }
-    
-

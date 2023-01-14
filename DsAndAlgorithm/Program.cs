@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort \n6.Check string is Anagram \n7.Print prime number \n");
+                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort \n6.Check string is Anagram \n7.Print prime number \n8.PrimePalindromeAnagram");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -48,6 +48,12 @@
                     case 7:
                         PrimeNumber primeNumber = new PrimeNumber();
                         primeNumber.Prime();
+                        break;
+                    case 8:
+                        PrimePalindromeAnagram primePalimdrome = new PrimePalindromeAnagram();
+                        primePalimdrome.PrimeNumber();
+                        primePalimdrome.Palindrome();
+                        primePalimdrome.AnagramCheck();
                         break;
                 }
             }

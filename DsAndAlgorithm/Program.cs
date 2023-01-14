@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n");
+                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -23,6 +23,25 @@
                         BubbleSort bubblesort = new BubbleSort();
                         bubblesort.Sort(@"C:\DsAlgorithm\DsAndAlgorithm\Word.txt");
                         break;
+                    case 5:
+                        MergeSort mergeSort = new MergeSort();
+                        int n = 8;
+                        int[] array = { 49, 3, 53, 21, 27, 75, 50, 41 };
+                        Console.WriteLine("Merge Sort");
+                        Console.Write("Initial array is: ");
+                        for (int i = 0; i < n; i++)
+                        {
+                            Console.Write(array[i] + " ");
+                        }
+                        mergeSort.Sort(array, 0, n - 1);
+                        Console.Write("\nSorted Array is: ");
+                        for (int i = 0; i < n; i++)
+                        {
+                            Console.Write(array[i] + " ");
+                        }
+                        Console.WriteLine();
+                        break;
+
                 }
             }
         }

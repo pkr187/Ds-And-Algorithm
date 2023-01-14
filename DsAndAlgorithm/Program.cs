@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort");
+                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort \n6.Check string is Anagram \n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,7 +41,10 @@
                         }
                         Console.WriteLine();
                         break;
-
+                    case 6:
+                        Anagram anagram = new Anagram();
+                        anagram.AnagramWord("heart", "earth");
+                        break;
                 }
             }
         }

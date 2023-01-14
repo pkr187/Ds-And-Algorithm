@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort \n6.Check string is Anagram \n7.Print prime number \n8.PrimePalindromeAnagram\n9.Order List using Generics\n10.Balanced Parantheses");
+                Console.WriteLine("Select Programs \n2.Binary search \n3.Insertion sort \n4.Bubble sort  \n5.Merge Sort \n6.Check string is Anagram \n7.Print prime number \n8.PrimePalindromeAnagram\n9.Order List using Generics\n10.Balanced Parantheses\n11. BankingCashCounter");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -62,6 +62,10 @@
                     case 10:
                         BalancedParentheses balancedParentheses = new BalancedParentheses();
                         balancedParentheses.BalanceParantheses(@"C:\DsAlgorithm\DsAndAlgorithm\Arthmetics.txt");
+                        break;
+                    case 11:
+                        BankingCashCounter bankCashCounter = new BankingCashCounter();
+                        bankCashCounter.ATM();
                         break;
                 }
             }
